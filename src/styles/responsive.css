@@ -1,0 +1,510 @@
+/* KMS SACCO - Responsive Styles */
+
+/* Mobile First Approach */
+
+/* Extra Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Typography adjustments */
+  .MuiTypography-h1 {
+    font-size: 2rem !important;
+  }
+  
+  .MuiTypography-h2 {
+    font-size: 1.75rem !important;
+  }
+  
+  .MuiTypography-h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .MuiTypography-h4 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Dashboard cards */
+  .dashboard-card {
+    margin-bottom: 16px;
+  }
+  
+  .dashboard-stats {
+    text-align: center;
+  }
+  
+  .stats-number {
+    font-size: 1.5rem !important;
+  }
+
+  /* Navigation */
+  .mobile-nav-button {
+    display: block !important;
+  }
+  
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* Forms */
+  .form-container {
+    padding: 16px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-actions .MuiButton-root {
+    width: 100%;
+  }
+
+  /* Tables */
+  .data-table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .mobile-table-card {
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  
+  .mobile-table-card .table-row {
+    display: none;
+  }
+
+  /* Investment cards */
+  .investment-card {
+    margin-bottom: 16px;
+  }
+  
+  .investment-amount {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+  }
+
+  /* Loan cards */
+  .loan-card {
+    margin-bottom: 16px;
+  }
+  
+  .loan-status {
+    margin-top: 8px;
+  }
+
+  /* Modal dialogs */
+  .MuiDialog-container {
+    padding: 8px !important;
+  }
+  
+  .mobile-dialog {
+    margin: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+    max-height: 100vh !important;
+    border-radius: 0 !important;
+  }
+
+  /* Action buttons */
+  .floating-action-button {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+  }
+  
+  .mobile-action-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #e0e0e0;
+    padding: 12px 16px;
+    z-index: 1000;
+  }
+
+  /* Charts and graphs */
+  .chart-container {
+    height: 250px !important;
+    margin-bottom: 16px;
+  }
+  
+  .chart-legend {
+    font-size: 0.75rem !important;
+  }
+
+  /* File upload */
+  .file-upload-area {
+    padding: 20px 16px !important;
+  }
+  
+  .file-upload-text {
+    font-size: 0.875rem !important;
+  }
+
+  /* Progress bars */
+  .progress-container {
+    margin: 12px 0;
+  }
+  
+  .progress-label {
+    font-size: 0.875rem !important;
+  }
+
+  /* Spacing utilities */
+  .mobile-spacing {
+    margin: 8px 0 !important;
+  }
+  
+  .mobile-padding {
+    padding: 12px !important;
+  }
+
+  /* Hide elements on mobile */
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .show-mobile {
+    display: block !important;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  /* Dashboard adjustments */
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .stats-card {
+    min-height: 120px;
+  }
+
+  /* Forms */
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .form-full-width {
+    grid-column: 1 / -1;
+  }
+
+  /* Tables */
+  .table-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Navigation */
+  .tablet-nav {
+    display: flex !important;
+  }
+  
+  .mobile-only {
+    display: none !important;
+  }
+
+  /* Charts */
+  .chart-container {
+    height: 300px;
+  }
+
+  /* Sidebar */
+  .sidebar-collapsed {
+    width: 60px !important;
+  }
+  
+  .sidebar-collapsed .sidebar-text {
+    display: none !important;
+  }
+}
+
+/* Medium devices (desktops, 960px and up) */
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+  /* Dashboard */
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .dashboard-main {
+    grid-column: span 2;
+  }
+  
+  .dashboard-sidebar {
+    grid-column: span 1;
+  }
+
+  /* Forms */
+  .form-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* Tables */
+  .data-table {
+    font-size: 0.875rem;
+  }
+  
+  .table-container {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  /* Charts */
+  .chart-container {
+    height: 350px;
+  }
+  
+  .chart-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Large devices (large desktops, 1280px and up) */
+@media only screen and (min-width: 1281px) {
+  /* Dashboard */
+  .dashboard-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  
+  .dashboard-main {
+    grid-column: span 3;
+  }
+  
+  .dashboard-sidebar {
+    grid-column: span 1;
+  }
+
+  /* Forms */
+  .form-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  
+  .form-half {
+    grid-column: span 2;
+  }
+
+  /* Tables */
+  .data-table-container {
+    max-height: 500px;
+  }
+
+  /* Charts */
+  .chart-container {
+    height: 400px;
+  }
+  
+  .chart-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  /* Layout */
+  .content-max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .mobile-dialog {
+    max-height: 90vh !important;
+    overflow-y: auto;
+  }
+  
+  .form-container {
+    padding: 12px;
+  }
+  
+  .chart-container {
+    height: 200px !important;
+  }
+}
+
+/* High DPI displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+  .icon-small {
+    transform: scale(0.9);
+  }
+  
+  .border-thin {
+    border-width: 0.5px;
+  }
+}
+
+/* Print media adjustments */
+@media print {
+  /* Hide unnecessary elements */
+  .no-print,
+  .MuiButton-root,
+  .floating-action-button,
+  .mobile-action-bar,
+  nav,
+  .navigation,
+  .sidebar {
+    display: none !important;
+  }
+  
+  /* Adjust layout for print */
+  .print-layout {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .print-page {
+    page-break-after: always;
+  }
+  
+  .print-no-break {
+    page-break-inside: avoid;
+  }
+  
+  /* Typography for print */
+  .print-title {
+    font-size: 18pt !important;
+    font-weight: bold !important;
+    margin-bottom: 12pt !important;
+  }
+  
+  .print-subtitle {
+    font-size: 14pt !important;
+    font-weight: bold !important;
+    margin-bottom: 8pt !important;
+  }
+  
+  .print-body {
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Tables for print */
+  .print-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+  
+  .print-table th,
+  .print-table td {
+    border: 1pt solid black !important;
+    padding: 4pt !important;
+    font-size: 10pt !important;
+  }
+  
+  /* Colors for print */
+  .print-header {
+    background-color: #f0f0f0 !important;
+    color: black !important;
+  }
+}
+
+/* Accessibility: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .chart-container,
+  .animated-element {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Accessibility: High contrast */
+@media (prefers-contrast: high) {
+  .MuiCard-root {
+    border: 2px solid black !important;
+  }
+  
+  .MuiButton-outlined {
+    border-width: 2px !important;
+  }
+  
+  .status-indicator {
+    border: 1px solid black !important;
+  }
+}
+
+/* Dark mode support (for future implementation) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-default: #121212;
+    --background-paper: #1e1e1e;
+    --text-primary: rgba(255, 255, 255, 0.87);
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --divider: rgba(255, 255, 255, 0.12);
+  }
+}
+
+/* Container queries for modern browsers */
+@supports (container-type: inline-size) {
+  .responsive-container {
+    container-type: inline-size;
+  }
+  
+  @container (max-width: 400px) {
+    .container-responsive {
+      font-size: 0.875rem;
+      padding: 8px;
+    }
+  }
+  
+  @container (min-width: 600px) {
+    .container-responsive {
+      font-size: 1rem;
+      padding: 16px;
+    }
+  }
+}
+
+/* Flexbox utilities for responsive design */
+.flex-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.flex-item-grow {
+  flex: 1;
+  min-width: 250px;
+}
+
+.flex-item-shrink {
+  flex: 0 0 auto;
+}
+
+/* Grid utilities for responsive design */
+.grid-responsive {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-responsive-cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* Aspect ratio utilities */
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1 / 1;
+}
